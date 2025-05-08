@@ -1,3 +1,3 @@
 # OpenView
 ### Privacy, Permissioned.
-A tool that helps users understand the permissions used by mobile apps.
+A tool that helps users visualize and understand the data their apps track about them.
