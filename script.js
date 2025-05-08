@@ -1,8 +1,14 @@
 const messages = [
-  "Search for books",
-  "Find your favorite movies",
-  "Explore new recipes",
-  "Discover destinations"
+  "See what apps know",
+  "Your data. Your choice.",
+  "Find out what’s shared",
+  "Privacy starts here",
+  "Understand app access",
+  "Discover app behavior",
+  "See who uses your data",
+  "Know before you download",
+  "Take control of your info",
+  "Clarity. On every app"
 ];
 
 let index = 0;
