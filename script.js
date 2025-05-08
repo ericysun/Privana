@@ -8,7 +8,15 @@ const messages = [
 let index = 0;
 const textElement = document.getElementById("slidingText");
 
+function updateText() {
+  // Remove and re-add animation to re-trigger it
+  textElement.classList.remove("sliding-text");
+  void textElement.offsetWidth; // Force reflow
+  textElement.textContent = messages[index];
+  textElement.classList.add("sliding-text");
+}
+
 setInterval(() => {
   index = (index + 1) % messages.length;
-  textElement.textContent = messages[index];
-}, 4000);
+  updateText();
+}, 4000); // Change time here if needed
