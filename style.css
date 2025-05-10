@@ -18,7 +18,7 @@ body {
 .search-container {
   position: relative;
   text-align: center;
-  width: 400px;
+  width: 380px;
   margin: 0 auto;
 
 }
@@ -140,10 +140,14 @@ body {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 1001;
+}
+
+.result-tile.expanded .close-button {
+  display: flex;
 }
 
 .close-button:hover {
