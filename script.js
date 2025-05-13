@@ -12,7 +12,7 @@ const messages = [
 ];
 
 const appData = new Map([
-  ["ChatGPT", { developer: "OpenAI", description: "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.", filename: "./App Icons/ChatGPT.webp"}],
+  ["ChatGPT", { developer: "OpenAI", description: "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.", filename: "ChatGPT.webp"}],
   ["Threads", { developer: "Instagram Inc.", description: "Say more with Threads — Instagram’s text-based conversation app.", filename: "Threads.webp"}],
   ["Google", { developer: "Google", description: "Download the Google app to stay in the know about things that matter to you. ", filename: "Google.webp" }],
   ["Google Maps", { developer: "Google", description: "Explore and navigate the world with confidence using Google Maps. " , filename: "Google Maps.webp"}],
@@ -63,7 +63,6 @@ document.getElementById('search').addEventListener('keypress', function (event) 
   if (event.key === 'Enter') {
     const searchTerm = event.target.value.trim();
 
-    // Dismiss the mobile keyboard by blurring the input field
     event.target.blur();
 
     if (searchTerm) {
@@ -74,14 +73,13 @@ document.getElementById('search').addEventListener('keypress', function (event) 
 
 function displayResults(searchTerm) {
   const resultsContainer = document.getElementById('results-container');
-  resultsContainer.innerHTML = ''; 
+  resultsContainer.innerHTML = '';
 
   let foundResults = false;
   appData.forEach((value, appName) => {
     if (appName.toLowerCase().includes(searchTerm.toLowerCase())) {
       foundResults = true;
 
-      // Create a result tile
       const tile = document.createElement('div');
       tile.className = 'result-tile';
 
@@ -118,7 +116,7 @@ function displayResults(searchTerm) {
       });
 
       closeButton.addEventListener('click', function (event) {
-        event.stopPropagation();
+        event.stopPropagation(); 
         tile.classList.remove('expanded');
       });
 
