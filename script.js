@@ -12,7 +12,7 @@ const messages = [
 ];
 
 const appData = new Map([
-  ["ChatGPT", { developer: "OpenAI", description: "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.", filename: "ChatGPT.webp"}],
+  ["ChatGPT", { developer: "OpenAI", description: "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.", filename: "./App Icons/ChatGPT.webp"}],
   ["Threads", { developer: "Instagram Inc.", description: "Say more with Threads — Instagram’s text-based conversation app.", filename: "Threads.webp"}],
   ["Google", { developer: "Google", description: "Download the Google app to stay in the know about things that matter to you. ", filename: "Google.webp" }],
   ["Google Maps", { developer: "Google", description: "Explore and navigate the world with confidence using Google Maps. " , filename: "Google Maps.webp"}],
