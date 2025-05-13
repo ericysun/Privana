@@ -41,7 +41,32 @@ const appData = new Map([
   ["DoorDash - Food Delivery", { developer: "DoorDash, Inc.", description: "With more than 310,000 menus and 55,000+ grocery, convenience and retail stores across 4,000+ cities in the U.S., Canada, and Australia, DoorDash offers the greatest online selection of your favorite restaurants and stores, delivered wherever you are.",filename:"Doordash.webp" }],
   ["McDonald's", { developer: "McDonald's USA", description: "Get the app now to join MyMcDonald's Rewards and start earning points on your faves for free McDonald's. Plus, get exclusive deals and save time by ordering ahead in the app.",filename:"McDonalds.webp" }],
   ["Meta AI", { developer: "Meta Platforms, Inc.", description: "Meet the new Meta AI app, your personal AI assistant that understands you. Get tailored answers, advice and inspiration as you go about your day.", filename:"Meta AI.webp" }],
-  ["Cash App: Mobile Banking", { developer: "Block, Inc.", description: "Cash App is the easy way to spend, save, and invest your money.* Pay anyone in cash or bitcoin* instantly and enjoy Cash App's free Lightning Network transfers with compatible wallets. Start saving by rounding up your spare change to the nearest dollar or invest in stocks, ETFs, or bitcoin." ,filename:"Cash App.webp"}]
+  ["Cash App: Mobile Banking", { developer: "Block, Inc.", description: "Cash App is the easy way to spend, save, and invest your money.* Pay anyone in cash or bitcoin* instantly and enjoy Cash App's free Lightning Network transfers with compatible wallets. Start saving by rounding up your spare change to the nearest dollar or invest in stocks, ETFs, or bitcoin." ,filename:"Cash App.webp"}],
+  ["Google Gemini", { developer: "Google", description: "The Google Gemini app is an AI assistant that can help supercharge your creativity and productivity.", filename:"Google Gemini.webp" }],
+  ["Amazon Shopping", { developer: "AMZN Mobile LLC", description: "Amazon Shopping offers app-only benefits to help make shopping on Amazon faster and easier. Browse, view product details, read reviews, and purchase millions of products. Amazon delivers to 100+ countries in as quickly as 3-5 days.", filename:"Amazon.webp" }],
+  ["Bible Chat: Daily Devotional", { developer: "Bookvitals APP SRL", description: "", filename:"Bible Chat.webp" }],
+  ["PayPal - Pay, Send, Save", { developer: "PayPal, Inc.", description: "PayPal is a smart and secure way to shop in-store and online, earn cash back on brands you love, send money to friends and much more. Get started in the app.", filename:"Paypal.webp" }],
+  ["Ticketmaster－Buy, Sell Tickets", { developer: "Ticketmaster", description: "The Ticketmaster app makes it easier to buy, sell, and get into the very best of live entertainment - so you can get on with making memories that last. We give you unparalleled access to thousands of venues, artists, theater and sports events.", filename:"Ticketmaster.webp" }],
+  ["Zoom Workplace", { developer: "Zoom Communications, Inc.", description: "Reimagine teamwork with Zoom Workplace, an AI-first, open collaboration platform that combines team chat, meetings, phone*, whiteboard, calendar, mail, docs, and more. Use Zoom Workplace for iOS with any free or paid Zoom license.", filename:"Zoom.webp" }],
+  ["Google Meet", { developer: "Google", description: "Google Meet is a high-quality video calling app designed to help you have meaningful and fun interactions with your friends, family, colleagues, and classmates, wherever they are. Meet lets you connect in whatever way works for you: Call someone spontaneously, schedule time together, or send a video message that they can watch and respond to later.", filename:"Google Meet.webp" }],
+  ["Google Drive", { developer: "Google", description: "Google Drive, part of Google Workspace, lets you securely store, intelligently organize and collaborate on files and folders from anywhere, on any device.", filename:"Google Drive.webp" }],
+  ["Google Docs ", { developer: "Google", description: "Create, edit, and collaborate on online documents with the Google Docs app. Work together in real time. Share documents with your team. Edit, comment, and add action items in real time. Never lose changes or previous versions of your document with version history.", filename:"Google Docs.webp" }],
+  ["Life360: Stay Connected & Safe", { developer: "Life360", description: "Loving someone means worrying constantly. Life360 helps you know they’re safe, no horror-movie plot twists required. Stay connected and secure with Life360, the ultimate friend and family locator and location-tracking app.", filename:"Life360.webp" }],
+  ["Best Buy: Tech drops & deals", { developer: "Best Buy Co., Inc.", description: "Get the best deals on appliances, electronics and more at Best Buy. We’ve simplified tech shopping, with warp-speed checkout, Curbside Pickup, limited runs, and can't-miss deals. Whether you’re in the market for the latest gadgets, electronics or essential appliances, Best Buy provides everything you need at your fingertips.", filename:"Best Buy.webp" }],
+  ["Expedia: Hotels, Flights, Cars", { developer: "Expedia, Inc.", description: "TRAVEL PLANNING MADE EASY IN ONE APP Plan, collaborate, book and manage your whole trip, from flights, vacation packages, hotels, car rentals, activities, and more. Find inspiration for your next destination, expert tips and personalized recommendations. Book your flight, hotel and more together to save.*", filename:"Expedia.webp" }],
+  ["Airbnb", { developer: "Airbnb, Inc.", description: "THE FASTEST, EASIEST WAY TO AIRBNB Find inspiration, plan a trip with your group, book it, and go. You’ll always have access to important trip information. And you’ll never miss a beat with instant notifications about your travel plans and messages from your host.", filename:"Airbnb.webp" }],
+  ["Discord - Talk, Play, Hang Out", { developer: "Discord, Inc.", description: "Discord is designed for gaming and great for just chilling with friends or building a community. Customize your own space and gather your friends to talk while playing your favorite games, or just hang out.", filename:"Discord.webp" }],
+  ["Venmo", { developer: "Venmo", description: "Venmo is the fast, safe, social way to pay and get paid. Join over 83 million people who use the Venmo app today.", filename:"Venmo.webp" }],
+  ["Pinterest", { developer: "Pinterest", description: "Pinterest is a place of endless possibilities. You can: - Discover everyday inspiration - Shop styles you love - Try and learn something new Create boards, save Pins and make collages of all your inspiration. Unlock billions of ideas, from fashion tips and easy recipes to DIY projects and fresh ways to redo your space. Creating the life you love? It's Possible.", filename:"Pinterest.webp" }],
+  ["T-Life", { developer: "T-Mobile", description: "ONE APP. ALL THE THINGS. Get the latest exclusive perks from T-Mobile Tuesdays, and take advantage of all your Magenta Status benefits. You can also pay your bill, add a line to your account, and track orders straight from the app. And you can manage your account, configure your T-Mobile Home Internet gateway, and more. If you need help with anything, customer care is available at the tap of a button.", filename:"T-Life.webp" }],
+  ["Amazon Prime Video", { developer: "AMZN Mobile LLC", description: "Watch movies, TV, and sports, including Amazon Originals like The Boys, The Marvelous Mrs. Maisel, and Tom Clancy’s Jack Ryan as well as recommendations just for you.", filename:"AmazonPrimeVideo.webp" }],
+  ["Intuit Credit Karma", { developer: "Credit Karma, Inc.", description: "Navigate your unique financial path confidently with help from Credit Karma and make the most of your money.", filename:"Credit Karma.webp" }],
+  ["Duolingo - Language Lessons", { developer: "Duolingo", description: "Learn a new language with the world’s most-downloaded education app! Duolingo is the fun, free app for learning 40+ languages through quick, bite-sized lessons. Practice speaking, reading, listening, and writing to build your vocabulary and grammar skills.", filename:"Duolingo.webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
 ]);
 
 let index = 0;
@@ -116,7 +141,7 @@ function displayResults(searchTerm) {
       });
 
       closeButton.addEventListener('click', function (event) {
-        event.stopPropagation(); 
+        event.stopPropagation();
         tile.classList.remove('expanded');
       });
 
@@ -128,7 +153,6 @@ function displayResults(searchTerm) {
     }
   });
 
-  // If no results are found
   if (!foundResults) {
     const noResults = document.createElement('div');
     noResults.className = 'no-results';
