@@ -62,7 +62,7 @@ const appData = new Map([
   ["Amazon Prime Video", { developer: "AMZN Mobile LLC", description: "Watch movies, TV, and sports, including Amazon Originals like The Boys, The Marvelous Mrs. Maisel, and Tom Clancy’s Jack Ryan as well as recommendations just for you.", filename:"AmazonPrimeVideo.webp" }],
   ["Intuit Credit Karma", { developer: "Credit Karma, Inc.", description: "Navigate your unique financial path confidently with help from Credit Karma and make the most of your money.", filename:"Credit Karma.webp" }],
   ["Duolingo - Language Lessons", { developer: "Duolingo", description: "Learn a new language with the world’s most-downloaded education app! Duolingo is the fun, free app for learning 40+ languages through quick, bite-sized lessons. Practice speaking, reading, listening, and writing to build your vocabulary and grammar skills.", filename:"Duolingo.webp" }],
-  ["Netflix", { developer: "Netflix, Inc.", description: "Looking for the most talked about TV shows and movies from around the world? They’re all on Netflix. We’ve got award-winning series, movies, documentaries, and stand-up specials. And with the mobile app, you get Netflix while you travel, commute, or just take a break.", filename:"Netflix.webp" }],
+  ["Netflix", { developer: "Netflix, Inc.", description: "Looking for the most talked about TV shows and movies from around the world? They’re all on Netflix. We’ve got award-winning series, movies, documentaries, and stand-up specials. And with the mobile app, you get Netflix while you travel, commute, or just take a break.", filesname:"Netflix.webp" }],
   ["Yuka - Food & Cosmetic Scanner", { developer: "Yuca", description: "Yuka is a free mobile app that allows you to scan the barcodes of food and personal care products and instantly see their impact on your health. A rating and detailed information help you understand the analysis of each product.", filename:"Yuka.webp" }],
   ["Snapchat", { developer: "Snap, Inc.", description: "Snapchat is a fast and fun way to share the moment with your friends and family SNAP. Snapchat opens right to the Camera — just tap to take a photo, or press and hold for video. Express yourself with Lenses, Filters, Bitmoji and more! Try out new Lenses daily created by the Snapchat community!", filename:"Snapchat.webp" }],
   ["MyChart", { developer: "Epic", description: "MyChart puts your health information in the palm of your hand and helps you conveniently manage care for yourself and your family members.", filename:"MyChart.webp" }],
@@ -77,12 +77,25 @@ const appData = new Map([
   ["The Roku App (Official)", { developer: "ROKU INC", description: "Get to know the must-have app for streamers Use the free Roku® mobile app to: Control your Roku devices with a convenient remote, Use your voice or keyboard to quickly search for entertainment, Enjoy private listening with headphones, Stream free movies, live TV, and more on the go with The Roku Channel, Cast media files from your phone, like videos and photos, to your TV, Add and launch channels on your Roku devices, Enter text on your Roku device easier with your mobile keyboard", filename:"Roku.webp" }],
   ["Lyft", { developer: "Lyft, Inc.", description: "Get where you’re going with Lyft. Whether you’re catching a flight, going out for the night, commuting to the office, or running errands in a rush, the Lyft app offers you multiple ways to get there.", filename:"Lyft.webp" }],
   ["Flip: Watch, Create, Shop", { developer: "Humans Inc.", description: "Welcome to the Flip Side. Where social meets shopping, and trust takes center stage. Flip isn’t just an app - it’s a community-powered platform where creativity thrives and trust fuels every interaction. Real people share their honest stories about experiences and products they love (or don’t). Here, you don’t just scroll; you get rewarded for it, you create, connect, and earn. And when you’re ready, you can shop the products you love, right when you love them - all in a community you trust.", filename:"Flip.webp" }],
+  ["ReelShort - Stream Drama & TV", { developer: "NewLeaf Publishing", description: "Never have enough time to finish a movie anymore? Tired of paying for subscriptions that you don’t use? Watch ReelShort - Every Second is Drama. Tired of never finishing a movie or paying for unused subscriptions? Watch ReelShort — Every Second is Drama", filename:"ReelShort.webp" }],
+  ["Microsoft 365 Copilot", { developer: "Microsoft Corporation", description: "The Microsoft 365 Copilot app is your everyday productivity app for work and life that helps you find and edit files, scan documents, and create content on the go with access to Microsoft 365 Copilot Chat*, Word, Excel, PowerPoint, and PDFs all in one app.", filename:"Microsoft Copilot.webp" }],
+  ["Zelle", { developer: "Early Warning Services, LLC", description: "Zelle® is a great way to send money to friends and family, even if they bank somewhere different than you do. More than 2,200 banks and credit unions across the U.S. now offer Zelle® through their mobile app or online banking. The Zelle® app will help you locate a bank or credit union that offers Zelle®. And for those who enrolled with Zelle® through the Zelle® app, you can view your historical Zelle® activity but can no longer send or receive money through the Zelle® app.", filename:"Zelle.webp" }],
+  ["Google Sheets", { developer: "Google", description: "Create, edit, and collaborate on spreadsheets with the Google Sheets app. ", filename:"Google Sheets.webp" }],
+  ["UKG Pro", { developer: "UKG INC.", description: "Say hello to the mobile work experience built to help you thrive at work. Simple and intuitive by design, the UKG Pro mobile app gives you instant, secure access to relevant employee information, tools, and insights helping you stay productive and engaged on the go. From clocking time and flexing schedules to checking pay and setting aspirational goals, you’ll discover how delightful work can be.", filename:"UKG Pro.webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
+  ["", { developer: "M", description: "", filename:".webp" }],
   ["", { developer: "M", description: "", filename:".webp" }],
   ["", { developer: "M", description: "", filename:".webp" }],
   ["", { developer: "M", description: "", filename:".webp" }],
   ["", { developer: "M", description: "", filename:".webp" }],
 ]);
-
 let index = 0;
 const textElement = document.getElementById("slidingText");
 
