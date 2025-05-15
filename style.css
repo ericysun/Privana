@@ -59,8 +59,8 @@ body {
 .app-icon {
   width: 50px;
   height: 50px;
-  border-radius: 10px; /* Optional: Rounded corners for the icon */
-  margin-right: 15px; /* Space between the icon and content */
+  border-radius: 10px;
+  margin-right: 15px;
 }
 
 .results-container {
@@ -147,14 +147,14 @@ body {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  display: none; /* Hide the close button by default */
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 1001;
 }
 
 .result-tile.expanded .close-button {
-  display: flex; /* Show the close button only in expanded view */
+  display: flex; 
 }
 
 .close-button:hover {
