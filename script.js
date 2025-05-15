@@ -1,14 +1,11 @@
 const messages = [
-  "See what apps know",
+  "See what apps know.",
   "Your data. Your choice.",
-  "Find out what’s shared",
-  "Privacy starts here",
-  "Understand app access",
-  "Discover app behavior",
-  "See who uses your data",
-  "Know before you download",
-  "Take control of your info",
-  "Clarity. On every app"
+  "Find out what’s shared.",
+  "Understand app access.",
+  "Know before you download.",
+  "Take control of your info.",
+  "Clarity. On every app."
 ];
 
 const appData = new Map([
@@ -82,20 +79,38 @@ const appData = new Map([
   ["Zelle", { developer: "Early Warning Services, LLC", description: "Zelle® is a great way to send money to friends and family, even if they bank somewhere different than you do. More than 2,200 banks and credit unions across the U.S. now offer Zelle® through their mobile app or online banking. The Zelle® app will help you locate a bank or credit union that offers Zelle®. And for those who enrolled with Zelle® through the Zelle® app, you can view your historical Zelle® activity but can no longer send or receive money through the Zelle® app.", filename:"Zelle.webp" }],
   ["Google Sheets", { developer: "Google", description: "Create, edit, and collaborate on spreadsheets with the Google Sheets app. ", filename:"Google Sheets.webp" }],
   ["UKG Pro", { developer: "UKG INC.", description: "Say hello to the mobile work experience built to help you thrive at work. Simple and intuitive by design, the UKG Pro mobile app gives you instant, secure access to relevant employee information, tools, and insights helping you stay productive and engaged on the go. From clocking time and flexing schedules to checking pay and setting aspirational goals, you’ll discover how delightful work can be.", filename:"UKG Pro.webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
-  ["", { developer: "M", description: "", filename:".webp" }],
+  ["Taco Bell Fast Food & Delivery", { developer: "Taco Bell", description: "Download the official Taco Bell® app and your taste buds will officially thank you. Earn points on every qualifying order and reward yourself with free food. Gain access to exclusives only available on the app. Order tacos for delivery or pickup", filename:"Taco Bell.webp" }],
+  ["Etsy: Shop Home, Style & More", { developer: "Etsy, Inc.", description: "Shop from Etsy sellers across every state in the US! From vintage treasures to handmade jewelry, or original home goods — discover unique finds for every trend, style and gifting moment with the Etsy app. Get deals on one-of-a-kind items from small shops and stay up to date on offers from your favorite sellers with notifications. No matter your budget or what you’re looking for, Etsy has it! Chat with sellers, instantly purchase finds, and track your orders—all in the app—for a seamless shopping experience.", filename:"Etsy.webp" }],
+  ["NetShort - Popular Dramas & TV ", { developer: "NETSTORY PTE. LTD.", description: "Welcome to NetShort, a next-generation HD streaming platform where we offer exclusive vertical TV programming. Our goal is to change how you watch movies, allowing you to enjoy mini-series up to one minute long anytime, anywhere. Whether you're at home or on the go, NetShort lets you watch the most popular mini-series, providing an immersive viewing experience. Join us today!", filename:"NetShort.webp" }],
+  ["Starbucks", { developer: "Starbucks Coffee Company", description: "Ordering ahead is just a download away. Get the Starbucks® app for an easier, more rewarding way to enjoy your faves. Why wait?", filename:"Starbucks.webp" }],
+  ["Waze Navigation & Live Traffic", { developer: "Waze Inc.", description: "Know what's ahead on the road with the help from other drivers. Waze is a live map that harnesses the local knowledge of tens of millions of drivers around the world. Drivers safely and confidently reach their everyday destinations thanks to Waze map’s GPS navigation, live traffic updates, real-time safety alerts (including construction, accidents, crashes, police, potholes, and more), and accurate ETAs.", filename:"Waze.webp" }],
+  ["Progressive", { developer: "Progressive Insurance", description: "Easy access to your insurance, whenever and wherever you need it.", filename:"Progressive.webp" }],
+  ["Edits, an Instagram app", { developer: "Instagram, Inc.", description: "Make videos you’re proud to share with Edits, the new video creation app from Instagram. Edits is a free video editor that makes it easy for creators to turn their ideas into videos, right on their phone. It has all the tools you need to support your creation process, all in one place.", filename:"Edits, an instagram app.webp" }],
+  ["DoorDash - Dasher", { developer: "DoorDash, Inc.", description: "Enjoy the freedom to be your own boss and earn money on your schedule. Plus, get 100% of your tips, always.", filename:"Doordash Dasher.webp" }],
+  ["MLB Ballpark", { developer: "MLB", description: "The MLB Ballpark app is your mobile companion when visiting your favorite Major League Baseball ballparks. The official MLB Ballpark application perfectly complements and personalizes your trip with digital ticketing functionality, mobile check-in, offers, rewards and exclusive content.", filename:"MLB Ballpark.webp" }],
+  ["Booking.com: Hotels & Travel", { developer: "Booking.com", description: "Save on your next trip with the Booking.com app! Find great hotel or apartment deals and book in just a few minutes. You can also book flights, rental cars, and more through the app.", filename:"Bookingcom.webp" }],
+  ["American Airlines", { developer: "American Airlines", description: "With the American Airlines app, you’re covered with the information you need exactly when you need it. Curious about traffic to the airport? Need a mobile boarding pass? Wondering where the closest Admirals Club® lounge is? All of this info and more is available at your fingertips.", filename:"American Airlines.webp" }],
+  ["Google Translate", { developer: "Google", description: "Translate between up to 249 languages. Feature support varies by language. Text: Translate between languages by typing. Offline: Translate with no internet connection. Instant camera translation: Translate text in images instantly by just pointing your camera", filename:"Google Translate.webp" }],
+  ["Fly Delta", { developer: "Delta Air Lines, Inc.", description: "Welcome to Fly Delta, Delta’s award winning iOS app. With our dynamic Today screen which provides quick access to your boarding pass and other important day-of-travel information, Fly Delta makes travel easier than ever before.", filename:"Fly Delta.webp" }],
+  ["eBay online shopping & selling", { developer: "eBay Inc.", description: "Life's easier in the eBay app—buy, sell & browse millions of items on the go. Discover exclusive deals, every single day. Enjoy a truly personalized and smooth way to buy & sell with eBay.", filename:"eBay.webp" }],
+  ["Google Photos: Backup & Edit", { developer: "Google", description: "Google Photos is a smarter home for all your photos and videos, made for the way you take photos today.", filename:"GooglePhotos.webp" }],
+  ["Alibaba.com", { developer: "杭州阿里巴巴广告有限公司", description: "Alibaba.com is one of the world’s leading B2B ecommerce marketplaces. Our app allows you to source products from global suppliers, all from the convenience of your mobile device.", filename:"Alibaba.webp" }],
+  ["SHEIN - Shopping Online", { developer: "ROADGET BUSINESS PTE. LTD.", description: "SHEIN is a fun and ultra-affordable online shopping platform. From fashion apparel to home, beauty, accessories, shoes and pets, plus electronics, tools, office and more, SHEIN is dedicated to meeting all your needs in life. We'll keep you in the loop with push notifications about new drops and more. You can also engage with other SHEIN lovers in real time. With free shippings and free returns policy, hope you have a pleasant journey with SHEIN!", filename:"Shein.webp" }],
+  ["ADP Mobile Solutions", { developer: "ADP, Inc", description: "ADP Mobile Solutions provides you with an easy and convenient way to access payroll, time & attendance, benefits, and other vital HR information for you and your team.", filename:"ADP Solutions.webp" }],
+  ["VPN - Super Unlimited Proxy", { developer: "Mobile Jump Pte Ltd", description: "Free VPN for iPhone and iPad - protect your privacy on WiFi and hotspots!", filename:"VPNSuperUnlimitedProxy.webp" }],
+  ["GroupMe", { developer: "Skype Communications S.a.r.l", description: "GroupMe - the free, simple way to stay in touch with the people who matter most. Family. Roommates. Friends. Coworkers. Teams. Vacations. Greek Life. Bands. Faith Groups. Events.", filename:"GroupMe.webp" }], 
+  ["Chase Mobile®: Bank & Invest", { developer: "JPMorgan Chase & Co.", description: "Bank securely with the Chase Mobile® app: send and receive money with Zelle®, deposit checks, monitor credit score, budget and track income & spend. Use J.P. Morgan Wealth Management to plan, invest, & set and track long-terms goals with Wealth Plan.", filename:"Chase Mobile.webp" }],
+  ["Disney+", { developer: "Disney", description: "Disney+ is the streaming home of your favorite stories. With beloved movies and series from Disney, Pixar, Marvel, Star Wars, National Geographic, there's always something to explore. Stream the latest movie releases, exclusive Original series, and highly anticipated matchups all in Disney+.", filename:"DisneyPlus.webp" }],
+  ["United Airlines", { developer: "United Airlines", description: "Meet the United app. From planning, to booking, to day of travel, we’ve got you covered.", filename:"UnitedAirlines.webp" }],
+  ["Zillow Real Estate & Rentals", { developer: "Zillow.com", description: "Whether you're looking to rent, buy, or sell, Zillow is the all-in-one app for making home real. Personalize your search with up-to-date listings of millions of homes at your fingertips. Save, search, and share listings seamlessly. Utilize our exclusive BuyAbility℠ tool to discover your home-buying budget. Stay updated on the homes that catch your eye and schedule a home tour with a partner agent with expert knowledge of local listings. Download Zillow today and find the home to buy or rent that’s right for you.", filename:"Zillow.webp" }],
+  ["Google Slides", { developer: "Google", description: "Create, edit, and collaborate on presentations with the Google Slides app.", filename:"Google Slides.webp" }],
+  ["YouTube Music", { developer: "Google", description: "Connecting you to the world of music: Music content including live performances, covers, remixes and music content you can’t find elsewhere. Thousands of curated playlist across many genres and activities.", filename:"YoutubeMusic.webp" }],
+  ["Google Authenticator", { developer: "Google", description: "Google Authenticator adds an extra layer of security to your online accounts by adding a second step of verification when you sign in. This means that in addition to your password, you'll also need to enter a code that is generated by the Google Authenticator app on your phone.", filename:"GoogleAuthenticator.webp" }],
+  ["MyFitnessPal: Calorie Counter", { developer: "MyFitnessPal, Inc.", description: "Track progress toward your nutrition, water, fitness, and weight loss goals with MyFitnessPal. This all-in-one food tracker and health app is like having a nutrition coach, meal planner, and food diary with you at all times.", filename:"MyFitnessPal.webp" }],
+  ["Lemon8 - Lifestyle Community", { developer: "TikTok Ltd.", description: "Lemon8 is a lifestyle community focused app powered by TikTok, where you can discover and share authentic content on a variety of topics such as beauty, fashion, travel, food, and more. You can edit and share photos with great ease and engage in discussion with like-minded people. Lemon8 offers a space where you can connect, inspire, and support one another.", filename:"Lemon8.webp" }],
+  ["Messenger", { developer: "Meta Platforms, Inc.", description: "Messenger is a free messaging app that helps you connect with anyone, anywhere. Stay in touch with your friends and family, explore your interests with people like you, build your community, and share your vibe beyond words, all in one app.", filename:"FacebookMessenger.webp" }],
 ]);
+
 let index = 0;
 const textElement = document.getElementById("slidingText");
 
@@ -111,10 +126,30 @@ setInterval(() => {
   updateText();
 }, 2000); 
 
+// Function to animate the placeholder text: Search for an app... in the search bar
+function animatePlaceholder() {
+  const searchInput = document.getElementById('search');
+  const placeholderText = "Search for an app...";
+  let currentIndex = 0;
+
+  function typeLetter() {
+    if (currentIndex <= placeholderText.length) {
+      searchInput.setAttribute('placeholder', placeholderText.substring(0, currentIndex));
+      currentIndex++;
+      setTimeout(typeLetter, 200);
+    }
+  }
+
+  typeLetter();
+}
+window.onload = animatePlaceholder;
+
+
 document.getElementById('search').addEventListener('keypress', function (event) {
   if (event.key === 'Enter') {
     const searchTerm = event.target.value.trim();
 
+    // Dismiss the mobile keyboard by blurring the input field
     event.target.blur();
 
     if (searchTerm) {
@@ -125,8 +160,9 @@ document.getElementById('search').addEventListener('keypress', function (event) 
 
 function displayResults(searchTerm) {
   const resultsContainer = document.getElementById('results-container');
-  resultsContainer.innerHTML = '';
+  resultsContainer.innerHTML = ''; // Clear previous results
 
+  // Iterate through the Map and find matching keys
   let foundResults = false;
   appData.forEach((value, appName) => {
     if (appName.toLowerCase().includes(searchTerm.toLowerCase())) {
