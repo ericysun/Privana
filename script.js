@@ -41,7 +41,7 @@ const appData = new Map([
   ["Cash App: Mobile Banking", { developer: "Block, Inc.", description: "Cash App is the easy way to spend, save, and invest your money.* Pay anyone in cash or bitcoin* instantly and enjoy Cash App's free Lightning Network transfers with compatible wallets. Start saving by rounding up your spare change to the nearest dollar or invest in stocks, ETFs, or bitcoin." ,filename:"Cash App.webp"}],
   ["Google Gemini", { developer: "Google", description: "The Google Gemini app is an AI assistant that can help supercharge your creativity and productivity.", filename:"Google Gemini.webp" }],
   ["Amazon Shopping", { developer: "AMZN Mobile LLC", description: "Amazon Shopping offers app-only benefits to help make shopping on Amazon faster and easier. Browse, view product details, read reviews, and purchase millions of products. Amazon delivers to 100+ countries in as quickly as 3-5 days.", filename:"Amazon.webp" }],
-  ["Bible Chat: Daily Devotional", { developer: "Bookvitals APP SRL", description: "", filename:"Bible Chat.webp" }],
+  ["Bible Chat: Daily Devotional", { developer: "Bookvitals APP SRL", description: "Begin your day with inspiration right on your home screen. Our new Daily Prayer Widgets offer personalized prayers and scripture tailored to your spiritual journey, making faith an integral part of your daily routine. Customize your faith with various designs and themes to match your personal style or mood.", filename:"Bible Chat.webp" }],
   ["PayPal - Pay, Send, Save", { developer: "PayPal, Inc.", description: "PayPal is a smart and secure way to shop in-store and online, earn cash back on brands you love, send money to friends and much more. Get started in the app.", filename:"Paypal.webp" }],
   ["Ticketmaster－Buy, Sell Tickets", { developer: "Ticketmaster", description: "The Ticketmaster app makes it easier to buy, sell, and get into the very best of live entertainment - so you can get on with making memories that last. We give you unparalleled access to thousands of venues, artists, theater and sports events.", filename:"Ticketmaster.webp" }],
   ["Zoom Workplace", { developer: "Zoom Communications, Inc.", description: "Reimagine teamwork with Zoom Workplace, an AI-first, open collaboration platform that combines team chat, meetings, phone*, whiteboard, calendar, mail, docs, and more. Use Zoom Workplace for iOS with any free or paid Zoom license.", filename:"Zoom.webp" }],
@@ -160,7 +160,7 @@ document.getElementById('search').addEventListener('keypress', function (event) 
 
 function displayResults(searchTerm) {
   const resultsContainer = document.getElementById('results-container');
-  resultsContainer.innerHTML = ''; // Clear previous results
+  resultsContainer.innerHTML = '';
 
   // Iterate through the Map and find matching keys
   let foundResults = false;
@@ -168,12 +168,13 @@ function displayResults(searchTerm) {
     if (appName.toLowerCase().includes(searchTerm.toLowerCase())) {
       foundResults = true;
 
+      // Create a result tile
       const tile = document.createElement('div');
       tile.className = 'result-tile';
 
       const icon = document.createElement('img');
       icon.className = 'app-icon';
-      icon.src = `./App Icons/${value.filename}`;
+      icon.src = `./app icons/${value.filename}`;
       icon.alt = `${appName} icon`;
 
       const content = document.createElement('div');
@@ -216,6 +217,7 @@ function displayResults(searchTerm) {
     }
   });
 
+  // If no results are found
   if (!foundResults) {
     const noResults = document.createElement('div');
     noResults.className = 'no-results';
