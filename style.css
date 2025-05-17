@@ -166,3 +166,24 @@ body {
 .close-button:hover {
   background-color: #02c0e6;
 }
+
+.result-detailed-info {
+  font-size: 14px;
+  color: #555;
+  margin-top: 15px;
+  line-height: 1.5;
+  display: none; 
+}
+
+.detailed-info-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.detailed-info-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
