@@ -9,7 +9,7 @@ const messages = [
 ];
 
 const appData = new Map([
-  ["ChatGPT", { developer: "OpenAI", description: "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.", filename: "ChatGPT.webp"}],
+  ["ChatGPT", { developer: "OpenAI", description: "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.", filename: "ChatGPT.webp",detailedInfo: "ChatGPT is a conversational AI model developed by OpenAI."}],
   ["Threads", { developer: "Instagram Inc.", description: "Say more with Threads — Instagram’s text-based conversation app.", filename: "Threads.webp"}],
   ["Google", { developer: "Google", description: "Download the Google app to stay in the know about things that matter to you. ", filename: "Google.webp" }],
   ["Google Maps", { developer: "Google", description: "Explore and navigate the world with confidence using Google Maps. " , filename: "Google Maps.webp"}],
@@ -160,15 +160,13 @@ document.getElementById('search').addEventListener('keypress', function (event) 
 
 function displayResults(searchTerm) {
   const resultsContainer = document.getElementById('results-container');
-  resultsContainer.innerHTML = '';
+  resultsContainer.innerHTML = ''; // Clear previous results
 
-  // Iterate through the Map and find matching keys
   let foundResults = false;
   appData.forEach((value, appName) => {
     if (appName.toLowerCase().includes(searchTerm.toLowerCase())) {
       foundResults = true;
 
-      // Create a result tile
       const tile = document.createElement('div');
       tile.className = 'result-tile';
 
@@ -192,6 +190,22 @@ function displayResults(searchTerm) {
       description.className = 'result-description';
       description.textContent = value.description;
 
+      const detailedInfo = document.createElement('div');
+      detailedInfo.className = 'result-detailed-info';
+
+      const detailedInfoTitle = document.createElement('div');
+      detailedInfoTitle.className = 'detailed-info-title';
+      detailedInfoTitle.textContent = 'Detailed Info';
+
+      const detailedInfoText = document.createElement('div');
+      detailedInfoText.className = 'detailed-info-text';
+      detailedInfoText.textContent = value.detailedInfo || "No additional information available.";
+
+      detailedInfo.appendChild(detailedInfoTitle);
+      detailedInfo.appendChild(detailedInfoText);
+
+      detailedInfo.style.display = 'none';
+
       content.appendChild(title);
       content.appendChild(developer);
       content.appendChild(description);
@@ -202,22 +216,24 @@ function displayResults(searchTerm) {
 
       tile.addEventListener('click', function () {
         tile.classList.add('expanded');
+        detailedInfo.style.display = 'block'; 
       });
 
       closeButton.addEventListener('click', function (event) {
         event.stopPropagation();
         tile.classList.remove('expanded');
+        detailedInfo.style.display = 'none';
       });
 
       tile.appendChild(icon);
       tile.appendChild(content);
+      tile.appendChild(detailedInfo); 
       tile.appendChild(closeButton);
 
       resultsContainer.appendChild(tile);
     }
   });
 
-  // If no results are found
   if (!foundResults) {
     const noResults = document.createElement('div');
     noResults.className = 'no-results';
