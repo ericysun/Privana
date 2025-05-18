@@ -172,7 +172,7 @@ function displayResults(searchTerm) {
 
       const icon = document.createElement('img');
       icon.className = 'app-icon';
-      icon.src = `./app icons/${value.filename}`;
+      icon.src = `./App Icons/${value.filename}`;
       icon.alt = `${appName} icon`;
 
       const content = document.createElement('div');
