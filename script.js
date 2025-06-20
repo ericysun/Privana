@@ -237,7 +237,7 @@ function displayResults(searchTerm) {
   if (!foundResults) {
     const noResults = document.createElement('div');
     noResults.className = 'no-results';
-    noResults.textContent = 'No apps found matching your search.';
+    noResults.innerHTML = 'No apps found matching your search. Suggest an app to add <a href="https://forms.gle/mhHYBYPjpE2DfhuJ8" class="suggest-link">here</a>!';
     resultsContainer.appendChild(noResults);
   }
 }

@@ -191,3 +191,14 @@ body {
 .logo-image{
   max-width: 40%;
 }
+
+/* if no matching app is found suggest link is displayed */
+.suggest-link {
+  color: #FFFFFF; 
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.suggest-link:hover {
+  color: #564a96; 
+}
