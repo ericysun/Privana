@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #8874c5;
   font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
+  color: #FFFFFF;
   font-family: 'Helvetica', Arial, sans-serif;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 #search:focus {
-  border-color: #007BFF;
+  border-color: #564a96;
 }
 
 .sliding-text-wrapper {
@@ -55,7 +55,7 @@ body {
 .sliding-text {
   display: inline-block;
   animation: fadeSlide 0.5s ease forwards;
-  color: #888;
+  color: #FFFFFF;
   transition: opacity 0.5s ease;
   padding-top: 10px;
 }
@@ -65,7 +65,7 @@ body {
   height: 50px;
   border-radius: 10px;
   margin-right: 15px;
-  border: 1px solid #cccccc7f;
+  border: 3px solid #564a96;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -91,8 +91,8 @@ body {
 .result-tile {
   width: 90%;
   max-width: 400px;
-  background-color: ffffff;/*#f0f0f0*/
-  border: 1px solid #ccc;
+  background-color:#8874c5;/*#f0f0f0*/
+  border: 1px solid #564a96;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -127,14 +127,14 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333;
+  color: #FFFFFF;
   text-align: left;
   width: 100%;
 }
 
 .result-description {
   font-size: 16px;
-  color: #666;
+  color: #FFFFFF;
   text-align: left;
   width: 100%;
   margin-top: 10px;
@@ -186,4 +186,8 @@ body {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
+}
+
+.logo-image{
+  max-width: 40%;
 }
