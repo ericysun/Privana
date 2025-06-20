@@ -115,7 +115,7 @@ body {
   transform: translate(-50%, -50%);
   width: 80vw;
   height: 80vh;
-  background-color: #ffffff;
+  background-color: #8874c5;
   z-index: 1000;
   padding: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -144,7 +144,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background-color: #007BFF;
+  background-color: #564a96;
   color: #fff;
   border: 1px;
   border-radius: 50%;
@@ -164,7 +164,7 @@ body {
 }
 
 .close-button:hover {
-  background-color: #02c0e6;
+  background-color: #100e78;
 }
 
 .result-detailed-info {
@@ -178,13 +178,13 @@ body {
 .detailed-info-title {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #FFFFFF;
   margin-bottom: 10px;
 }
 
 .detailed-info-text {
   font-size: 14px;
-  color: #666;
+  color: #FFFFFF;
   line-height: 1.5;
 }
 
