@@ -17,4 +17,4 @@ By translating complex privacy practices into understandable insights and offeri
 # Feedback: Bug and Feature Suggestion
 https://bit.ly/PrivanaFeedback
 # Become a Contributor:
-Are you able to commit at least a few hours per week to this project?
+https://forms.gle/jfEovEZr3BfFUWXo6
