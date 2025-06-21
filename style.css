@@ -9,7 +9,7 @@ body {
 }
 
 .header-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 600;
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -19,29 +19,31 @@ body {
 .search-container {
   position: sticky;
   text-align: center;
-  width: 418px;
+  width: 90%;
+  max-width: 600px;
+  min-width: 300px;
   margin: 0 auto;
   font-family: 'Helvetica', Arial, sans-serif;
 }
 
 #search {
   width: 100%;
-  padding: 12px 16px;
+  padding: clamp(10px, 2.5vw, 12px) clamp(12px, 3vw, 16px);
   border: 2px solid #e0e7ff;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: clamp(14px, 3vw, 16px);
   outline: none;
   transition: border-color 0.4s ease;
   display: block;
   margin: 0 auto;
   font-family: 'Helvetica', Arial, sans-serif;
-  color: #4c1d95;
+  color: #8874c5;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 #search::placeholder {
-  color: #7c3aed;
+  color: #8874c5;
   opacity: 0.8;
 }
 
@@ -87,6 +89,7 @@ body {
   justify-content: center;
   gap: 15px;
   width: 100%;
+  max-width: 800px;
 }
 
 @keyframes fadeSlide {
@@ -101,8 +104,9 @@ body {
 }
 
 .result-tile {
-  width: 90%;
-  max-width: 400px;
+  width: 95%;
+  max-width: 600px;
+  min-width: 280px;
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   border: 2px solid #e2e8f0;
   border-radius: 16px;
@@ -110,7 +114,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 24px;
+  padding: clamp(16px, 4vw, 24px);
   font-size: 14px;
   color: #1e293b;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -143,7 +147,7 @@ body {
 }
 
 .result-title {
-  font-size: 24px;
+  font-size: clamp(18px, 4vw, 24px);
   font-weight: bold;
   margin-bottom: 10px;
   color: #1e293b;
@@ -152,7 +156,7 @@ body {
 }
 
 .result-description {
-  font-size: 16px;
+  font-size: clamp(14px, 3vw, 16px);
   color: #475569;
   text-align: left;
   width: 100%;
@@ -225,4 +229,46 @@ body {
 
 .suggest-link:hover {
   color: #a855f7; 
+}
+/*can play around with these values later to improve tablet+phone+computer experience */
+/* Mobile devices */
+@media (max-width: 768px) {
+  .search-container {
+    width: 85%;
+    min-width: 280px;
+    max-width: 400px;
+  }
+  
+  .result-tile {
+    width: 90%;
+    min-width: 280px;
+    max-width: 450px;
+  }
+  
+  .results-container {
+    gap: 12px;
+    max-width: 500px;
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .search-container {
+    width: 85%;
+  }
+  
+  .result-tile {
+    width: 90%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .search-container {
+    width: 80%;
+  }
+  
+  .result-tile {
+    width: 85%;
+  }
 }
