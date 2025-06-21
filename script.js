@@ -1,12 +1,11 @@
 const messages = [
   "See what apps know.",
-  "Your data. Your choice.",
-  "Find out what’s shared.",
-  "Understand app access.",
-  "Know before you download.",
-  "Take control of your info.",
-  "Clarity. On every app."
-];
+  "We read the fine print.",
+  "You get the real story.",
+  "No jargon. Just facts.",
+  "Summarized for real people.",
+  "Simple answers. No surprises."
+  ];
 
 const appData = new Map([
   ["ChatGPT", { developer: "OpenAI", description: "Introducing ChatGPT for iOS: OpenAI’s latest advancements at your fingertips.", filename: "ChatGPT.webp",detailedInfo: "ChatGPT is a conversational AI model developed by OpenAI."}],
@@ -32,7 +31,7 @@ const appData = new Map([
   ["Spotify: Music and Podcasts", { developer: "Spotify", description: "With the Spotify app, you can explore an extensive library of music and podcasts for free. Curate the best playlists and stream millions of free songs, albums, and original podcasts on your phone or tablet. ",filename:"Spotify.webp"}],
   ["Walmart: Shopping & Savings", { developer: "Walmart", description: "The Walmart app is the easiest way to shop for everything on your list, including fresh groceries, household essentials, the latest tech and a lot more. ",filename:"Walmart.webp"}],
   ["Capital One Shopping: Save Now", { developer: "Wikibuy, LLC", description: "100% Free for everyone - no Capital One account required! Get free automatic coupons and exclusive savings on the go. Plus, get a free rewards bonus when you download the app and add the free tool to Safari.",filename:"CapitalOne Shopping.webp" }],
-  ["YouTube", { developer: "Google", description: "Get the official YouTube app on iPhones and iPads. See what the world is watching -- from the hottest music videos to what’s popular in gaming, fashion, beauty, news, learning and more. ",filename:"YouTube.webp" }],
+  ["YouTube", { developer: "Google", description: "Get the official YouTube app on iPhones and iPads. See what the world is watching -- from the hottest music videos to what’s popular in gaming, fashion, beauty, news, learning and more. ",filename:"Youtube.webp" }],
   ["Uber - Request a ride", { developer: "Uber Technologies, Inc.", description: "Join the millions of riders who trust Uber for their everyday travel needs. Whether you’re running an errand across town or exploring a city far from home, getting there should be easy.",filename:"Uber.webp" }],
   ["Microsoft Outlook", { developer: "Microsoft Corporation", description: "Outlook lets you bring all your email accounts and calendars in one convenient spot. Whether it’s staying on top of your inbox or scheduling the next big thing, we make it easy to be your most productive, organised and connected self.",filename:"Microsoft Outlook.webp" }],
   ["DoorDash - Food Delivery", { developer: "DoorDash, Inc.", description: "With more than 310,000 menus and 55,000+ grocery, convenience and retail stores across 4,000+ cities in the U.S., Canada, and Australia, DoorDash offers the greatest online selection of your favorite restaurants and stores, delivered wherever you are.",filename:"Doordash.webp" }],
