@@ -194,11 +194,11 @@ function displayResults(searchTerm) {
 
       const detailedInfoTitle = document.createElement('div');
       detailedInfoTitle.className = 'detailed-info-title';
-      detailedInfoTitle.textContent = 'Detailed Info';
+      detailedInfoTitle.textContent = 'Privacy Information';
 
       const detailedInfoText = document.createElement('div');
       detailedInfoText.className = 'detailed-info-text';
-      detailedInfoText.textContent = value.detailedInfo || "No additional information available.";
+      detailedInfoText.textContent = value.detailedInfo || "Privacy info not yet available.";
 
       detailedInfo.appendChild(detailedInfoTitle);
       detailedInfo.appendChild(detailedInfoText);
