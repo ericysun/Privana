@@ -18,22 +18,17 @@
       
       <div class="welcome-sections">
         <div class="welcome-section">
-          <h3> What We Do</h3>
-          <p>Privana helps you understand what your favorite apps know about you. We read through the fine print so you don't have to.</p>
+          <h3>Privacy. Parsed.</h3>
+          <p>We turn long, confusing privacy policies into short, easy-to-read summaries. Just search for an app, and find out what data they collect and share.</p>
         </div>
         
         <div class="welcome-section">
-          <h3>How It Works</h3>
-          <p>Simply search for any app in the search bar below. We'll show you what data that app collects, how it's used, and what you should know about your privacy.</p>
-        </div>
-        
-        <div class="welcome-section">
-          <h3>What You'll Learn</h3>
+          <h3>How it Works</h3>
           <ul>
-            <li>What personal data the app collects</li>
-            <li>How your information is used</li>
-            <li>Who the app shares data with</li>
-            <li>Your privacy rights and options</li>
+            <li>For each app, we identify and catalog the official privacy policy URL and use it to make an API call that retrieves the latest policy content for processing.</li>
+            <li>This data is analyzed using an LLM (Perplexity Sonar) to produce concise summaries on what information the app collects, how it’s used, and why.</li>
+            <li>Each summary is then manually reviewed, refined, and condensed for maximum clarity before being added to our database.</li>
+            <li>Our platform currently indexes privacy data from the top 100 apps on the App Store, with support for additional apps coming soon.</li>
           </ul>
         </div>
         
