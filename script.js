@@ -200,7 +200,21 @@ function displayResults(searchTerm) {
       detailedInfoText.className = 'detailed-info-text';
       detailedInfoText.textContent = value.detailedInfo || "Privacy info not yet available.";
 
+      // Create disclaimer section
+      const disclaimerSection = document.createElement('div');
+      disclaimerSection.className = 'disclaimer-section';
+      disclaimerSection.innerHTML = `
+        <div class="disclaimer-header">
+          <span class="disclaimer-icon">ⓘ</span>
+          <span class="disclaimer-text">Privana summaries may contain mistakes.</span>
+        </div>
+        <div class="disclaimer-explanation">
+          <p>While we strive for accuracy, our summaries may not reflect the most current privacy policies. App privacy practices are summarized with a LLM, which may make mistakes or misrepresentations. We recommend checking the official privacy policy of any app for the most up-to-date information.</p>
+        </div>
+      `;
+
       detailedInfo.appendChild(detailedInfoTitle);
+      detailedInfo.appendChild(disclaimerSection);
       detailedInfo.appendChild(detailedInfoText);
 
       detailedInfo.style.display = 'none';
@@ -215,7 +229,10 @@ function displayResults(searchTerm) {
 
       tile.addEventListener('click', function () {
         tile.classList.add('expanded');
-        detailedInfo.style.display = 'block'; 
+        detailedInfo.style.display = 'block';
+        
+        // Initialize disclaimer functionality for this tile
+        initializeDisclaimerForTile(disclaimerSection);
       });
 
       closeButton.addEventListener('click', function (event) {
@@ -238,6 +255,35 @@ function displayResults(searchTerm) {
     noResults.className = 'no-results';
     noResults.innerHTML = 'No apps found matching your search. Suggest an app to add <a href="https://forms.gle/mhHYBYPjpE2DfhuJ8" class="suggest-link">here</a>!';
     resultsContainer.appendChild(noResults);
+  }
+}
+
+// Disclaimer functionality for expanded tiles
+function initializeDisclaimerForTile(disclaimerSection) {
+  const disclaimerHeader = disclaimerSection.querySelector('.disclaimer-header');
+  const disclaimerIcon = disclaimerSection.querySelector('.disclaimer-icon');
+  const disclaimerExplanation = disclaimerSection.querySelector('.disclaimer-explanation');
+  
+  if (disclaimerHeader && disclaimerIcon && disclaimerExplanation) {
+    // Remove any existing event listeners
+    disclaimerHeader.removeEventListener('click', disclaimerHeader.clickHandler);
+    
+    // Add new event listener
+    disclaimerHeader.clickHandler = function() {
+      const isExpanded = disclaimerExplanation.classList.contains('expanded');
+      
+      if (isExpanded) {
+        // Collapse
+        disclaimerExplanation.classList.remove('expanded');
+        disclaimerIcon.classList.remove('expanded');
+      } else {
+        // Expand
+        disclaimerExplanation.classList.add('expanded');
+        disclaimerIcon.classList.add('expanded');
+      }
+    };
+    
+    disclaimerHeader.addEventListener('click', disclaimerHeader.clickHandler);
   }
 }
 
