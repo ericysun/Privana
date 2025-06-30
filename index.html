@@ -6,6 +6,14 @@
   <title>Privana</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="/Branding Images/privanaLogo.png">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9PZEG3Z8LV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9PZEG3Z8LV');
+  </script>
 </head>
 <body>
   <!-- Welcome Overlay -->
@@ -26,7 +34,7 @@
           <h3>How it Works</h3>
           <ul>
             <li>For each app, we identify and catalog the official privacy policy URL and use it to make an API call that retrieves the latest policy content for processing.</li>
-            <li>This data is analyzed using an LLM (Perplexity Sonar) to produce concise summaries on what information the app collects, how it’s used, and why.</li>
+            <li>This data is analyzed using an LLM (Perplexity Sonar) to produce concise summaries on what information the app collects, how it's used, and why.</li>
             <li>Each summary is then manually reviewed, refined, and condensed for maximum clarity before being added to our database.</li>
             <li>Our platform currently indexes privacy data from the top 100 apps on the App Store, with support for additional apps coming soon.</li>
           </ul>
