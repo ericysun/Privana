@@ -492,9 +492,139 @@ body {
 }
 
 .disclaimer-explanation p {
-  font-size: 13px;
-  color: #6b7280;
+  margin: 0 0 10px 0;
   line-height: 1.5;
-  margin: 0;
-  font-family: 'Helvetica', Arial, sans-serif;
 }
+
+/* Footer Styles */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.privacy-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.privacy-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 30px;
+    padding: 15px 0;
+  }
+  
+  .privacy-link {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
+  .privacy-container {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+  
+  .privacy-header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Privacy Policy Page Styles */
+.privacy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #1e293b;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.privacy-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.privacy-header h1 {
+  color: #8874c5;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.privacy-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.privacy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-section h2 {
+  color: #8874c5;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.privacy-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+.privacy-section ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.privacy-section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #8874c5;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid #8874c5;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: #8874c5;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(136, 116, 197, 0.3);
+}
+
