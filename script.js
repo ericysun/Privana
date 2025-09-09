@@ -60,7 +60,7 @@ async function displayResults(searchTerm) {
       resultsContainer.innerHTML = '';
     
     if (apps.length === 0) {
-      resultsContainer.innerHTML = '<div class="no-results">No apps found matching your search. Suggest an app to add <a href="https://forms.gle/mhHYBYPjpE2DfhuJ8" target="_blank">here</a>!</div>';
+      resultsContainer.innerHTML = '<div class="no-results">No apps found matching your search. Suggest an app to add <a href="https://forms.gle/mhHYBYPjpE2DfhuJ8" target="_blank" class="suggest-link">here</a>!</div>';
       return;
     }
 
