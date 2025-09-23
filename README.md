@@ -5,7 +5,7 @@
 A tool that helps users visualize and understand the data their apps track about them. Use our intuitive search feature to look up the apps you use and understand the permissions you give to your apps, giving you privacy and let you feel nirvana. 
 
 ### How Privana Works
-We’ve indexed data from the top 100 apps on the App Store. For each app, we processed its privacy policy and enriched it with contextual information from across the web. This data is then analyzed using an LLM (Perplexity Sonar) to produce concise, readable summaries that clearly explain what information the app collects, how it’s used, and why.
+We’ve indexed data from the top 100 apps on the App Store. For each app, we processed its privacy policy and enriched it with contextual information from across the web. This data is then analyzed using an LLM (Perplexity Sonar) to produce concise, readable summaries that clearly explain what information the app collects, how it’s used, and why. The data is then stored in a PostgreSQL database, which is searched through upon user queries.
 
 But we go beyond just transparency. Privana also suggests:
 
