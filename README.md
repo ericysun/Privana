@@ -24,5 +24,5 @@ Viewing a Summary of the Spotify Privacy Policy, with Privacy Suggestions.
 https://bit.ly/PrivanaFeedback
 # Suggest an App to Add to Our Database
 https://bit.ly/PrivanaAppSuggestion
-# Become a Contributor:
+# Become a Contributor
 https://bit.ly/PrivanaContributor
